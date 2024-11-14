@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: $bgcolor;
+    font-family: $roboto;
+}
+
+.preload * {
+    transition: none !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26px;
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 30px;
+        font-family: $edu;
+        margin-left: 120px;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        margin-right: 120px;
+        a {
+            margin-left: 0px;
+            min-width: 50px;
+            font-family: $roboto;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border: 3px solid white;
+            border-radius: 8px;
+            margin-right: 20px;
+            transition: all 0.5s ease;
+            color: white;
+            i {
+                padding-left: 4px;
+                background-color: rgba($color: white, $alpha: 0);
+            }
+        }
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
